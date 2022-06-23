@@ -1,0 +1,16 @@
+torchvision
+
+pyyaml
+
+numpy
+
+scikit-learn
+
+matplotlib
+
+pandas
+
+scipy
+
+h5py
+

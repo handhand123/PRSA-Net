@@ -1,0 +1,51 @@
+model_name: PRSA_Net
+
+dataset: {
+    dataset_name: thumos,               # ['thumos', 'acnet']
+    feature_name: i3d,
+    temporal_scale: 200,
+    video_info_path: ./data/thumos_annotations/,
+    feature_path: /mnt/lustre/share_data/zhangfeng/thumos14_i3d_feature/I3D_features,
+    gap_videoframes: 4,
+    max_duration: 128,
+    min_duration: 0,
+    num_workers: 8,
+    overwrite: false,
+}
+
+model: {
+    prop_boundary_ratio: 0.5,
+    num_sample: 32,
+    num_sample_perbin: 3,
+    feat_dim: 2048,
+    adjacency_snippets: '2,4,8',
+}
+
+scheme: {
+    training_lr: 0.0002,
+    weight_decay: 0.0002,
+    batch_size: 8,
+    step_size: 3,
+    step_gamma: 0.1,
+    train_epoch: 5
+}
+
+output: {
+    checkpoint_path: ./checkpoint,
+    output_path: ./output/,
+}
+
+eval: {
+    eval_model: PRSA_checkpoint_3.pth.tar,
+    thumo_test_anno: ./data/thumos_annotations/test_Annotation.csv,
+    thumos_test_gt: ./data/thumos_annotations/thumos14_test_groundtruth.csv,
+    thumos_gt: ./Evaluation/thumos_gt.json,
+    num_props: 1000,
+    save_fig_path: ./output/figure.jpg,
+    NMS_threshold_d: 0.37,
+    NMS_threshold_p: 0.65,
+    soft_nms_low_thres: 0.5,
+    soft_nms_high_thres: 0.9
+}
+
+output_dir: outputs/

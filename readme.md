@@ -1,5 +1,7 @@
 ## Pyramid Region-based Slot Attention Network for Temporal Action Proposal Generation
 
+-[Paper][paper_arixv]
+
 # Usage Guide
 
 ## Prerequisites
@@ -32,7 +34,7 @@ temporal action detection: THUMOS14 & ActivityNet v1.3. Here are some steps to d
 ### Download Features
 
 You can get the TSN features for training and testing from  [G-TAD][G-TAD] [GoogleDrive][TSN].
-I3D features will be provied later.
+I3D features is provided in PGCN[PGCN_github]
 
 ## Training
 
@@ -105,3 +107,4 @@ lishuaicheng@sensetime.com
 [BMN]: https://arxiv.org/pdf/1907.09702.pdf
 [G-TAD]: https://arxiv.org/pdf/1911.11462.pdf
 [TSN]: https://drive.google.com/drive/folders/10PGPMJ9JaTZ18uakPgl58nu7yuKo8M_k
+[paper_arixv]: https://arxiv.org/pdf/2206.10095.pdf

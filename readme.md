@@ -34,7 +34,7 @@ temporal action detection: THUMOS14 & ActivityNet v1.3. Here are some steps to d
 ### Download Features
 
 You can get the TSN features for training and testing from  [G-TAD][G-TAD] [GoogleDrive][TSN].
-I3D features is provided in PGCN[PGCN_github]
+I3D features will be provided later.
 
 ## Training
 

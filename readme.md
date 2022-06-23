@@ -3,7 +3,7 @@
 # Usage Guide
 
 ## Prerequisites
-[[back to top](#Pyramid Region-based Slot Attention Network for Temporal Action Proposal Generation)]
+
 
 The training and testing in PRSA-Net is reimplemented in PyTorch for the ease of use. 
 
@@ -19,7 +19,7 @@ pip install -r requirements.txt
  
 
 ## Code and Data Preparation
-[[back to top](#Pyramid Region-based Slot Attention Network for Temporal Action Proposal Generation)]
+
 
 ### Download Datasets
 
@@ -35,7 +35,7 @@ You can get the TSN features for training and testing from  [G-TAD][G-TAD] [Goog
 
 
 ## Training
-[[back to top](#Pyramid Region-based Slot Attention Network for Temporal Action Proposal Generation)]
+
 
 Install Align1D layers
 ```bash
@@ -58,7 +58,7 @@ python main.py --mode train --cfg $PATH_TO_CONFIG_FILE
 ```
 
 ## Testing Trained Models
-[[back to top](#Pyramid Region-based Slot Attention Network for Temporal Action Proposal Generation)]
+
 
 You can evaluate the model's action proposal generation performance and action detection performance at the same time by running the following command
 
@@ -83,9 +83,6 @@ This script will report the proposal generation performance in terms of AR(avera
 | PRSA-Net (I3D + PGCN)       | 58.7     |
 
 
-```
-
-```
 
 ## Reference
 My implementations borrow ideas from previous works.

@@ -1,3 +1,5 @@
+
+
 ## Pyramid Region-based Slot Attention Network for Temporal Action Proposal Generation
 
 -[Paper][paper_arixv]
@@ -48,8 +50,9 @@ python setup.py install
 Set the path of features in config/cfg.yaml
 
 ```bash
-feature_path: $PATH_OF_FEATURES
-video_info_path: $PATH_OF_ANNOTATIONS
+dataset:
+  feature_path: $PATH_OF_FEATURES
+  video_info_path: $PATH_OF_ANNOTATIONS
 ```
 
 
